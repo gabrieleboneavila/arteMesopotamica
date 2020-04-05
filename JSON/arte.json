@@ -1,0 +1,58 @@
+{
+ 
+  "Escultura":
+  {
+    "icone":"../Icons/sculpture-24px.svg",
+    "id":"es45",
+    "titulo":"Esculturas",
+    "conteudo":"Descubra a principal utilidade delas, as mais famosas e muito mais!",
+    "botao":"Vamos lá!",
+    "parag1":"Geralmente estas eram produzidas como decoração para túmulos e templos, sendo que as estátuas são as que mais chamam atenção, elas poderiam ter três dimensões e serem feitas de diversos materiais como pedra, madeira ou argila, sendo que as estatuetas esculpidas em baixo-relevo possuíam um impressionante realismo. Abaixo Escultura de Gudea",
+    "legenda":"../Icons/united-states-of-america-flag.svg",
+    "img":"../Images/gudea.jpeg",
+    "parag2":"Os mesopotâmicos representavam normalmente seres-humanos, deuses e animais em suas esculturas, de uma forma endurecida, sem detalhes anatômicos e sem remeter movimento, normalmente de pé ou sentados, sendo que os olhos das estátuas receberam um acabamento com esmalte. Os membros das estatuetas eram representados fixados/juntos a sua estrutura física, que era normalmente esculpida trajada com um manto.",
+    "vid":"naotemkk"
+
+  },
+  "Arquitetura":
+  {
+    "icone":"../Icons/architecture-24px.svg",
+    "id":"ar45",
+    "titulo":"Arquitetura",
+    "conteudo":"Você quer saber qual era o principal tipo de produção arquitetônica?",
+    "botao":"Sim!",
+    "parag1": "O principal e mais desenvolvido tipo de produção artística dos Mesopotâmicos (mas não era tão notável quanto a egípcia), a maior parte de suas construções foram feitas com tijolos cozidos ao sol, já que não havia uma quantidade considerável de pedreiras na Mesopotâmia, as paredes de suas construções eram grossas e possuíam uma baixa vida útil por culpa da resistência do material.",
+    "legenda":"../Icons/brazil-flag.svg",
+    "img":"../Images/gudea.jpeg",
+    "parag2":"Suas construções arquitetônicas eram frequentemente decoradas com conchas e madrepérolas, além de lapis-lazuli (uma pedra de coloração azulada, que era muito utilizada como adereço entre as sociedades da época). Os templos dos mesopotâmicos eram completos, com salas específicas para a estadia dos sacerdotes, por exemplo.",
+    "vid":"naotemkk"
+  },
+  
+  "Zigurates":
+  {
+    "icone":"../Icons/zigurate-24px.svg",
+    "titulo":"Zigurates",
+    "id":"zi46",
+    "conteudo":"Seres muitos importantes habitavam neles! Você sabe quais eram?",
+    "botao":"Quero saber!",
+    "parag1":"Estes que são as construções mesopotâmicas mais famosas, eram templos com formato de pirâmide que possuíam muitos andares, eles tinham como objetivo ser um local para se realizar a veneração às divindades mesopotâmicas.",
+    "parag2":"Na superfície dos zigurates havia um santuário que era utilizado com o fim de se contemplar o céu, sendo que os povos da região acreditavam que estes eram a moradia das divindades e que eles eram intermediários na interação entre deuses e humanos.",
+    "legenda":"../Icons/brazil-flag.svg",
+    "img":"../Images/zigurateUr.jpeg",
+    "vid":"naotemkk"
+  },
+
+  "Literatura":
+  {
+    "icone":"../Icons/book-open-black.svg",
+    "titulo":"Literatura",
+    "id":"li46",
+    "conteudo":"Você vai descobrir qual é o livro mais antigo do mundo!",
+    "botao":"Conte-me mais!",
+    "parag1":"A linguagem acádia foi utilizada na Mesopotâmia, nas antigas Assíria e Babilônia, sendo que, a linguagem suméria foi também utilizada anteriormente. As línguas semíticas (acádia e aramaico) foram usadas na área onde hoje se compreende o Oriente Médio, na Mesopotâmia (para textos que tratavam de assuntos religiosos, os babilônios utilizavam um idioma e escrita especial, que era usado exclusivamente para estes casos). A literatura acadiana e a literatura suméria evoluíram de forma que ambas dependeram uma da outra mutuamente. ",
+    "parag2":"Elas eram fortemente influenciadas por sua religião (histórias e mitos que explicavam a criação de suas divindades e do mundo, como por exemplo “O Mito da Criação”). Os sumérios foram os responsáveis pela criação do primeiro sistema de escrita conhecido, a escrita cuneiforme (recebe esse nome por ser realizada com objetos em forma de cunha) e sua literatura era composta principalmente pela poesia, sendo um dos principais exemplos o poema épico “Epopeia de Gilgamesh”, que conta a história da busca pela imortalidade feita pelo rei de Uruk, sendo este considerado o livro mais antigo que se há relatos, já que foi escrito por volta de 2000 a.C.",
+    "legenda":"../Icons/brazil-flag.svg",
+    "img":"../Images/epopeia-de-gilgamesh.jpg "
+  }
+
+}

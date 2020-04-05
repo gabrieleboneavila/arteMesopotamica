@@ -1,0 +1,66 @@
+{
+ 
+    "leaoBabilonia":
+    { "id":"lb40",
+      "nome":"Leão da Babilônia",
+      "parag1":"Está situado no Portão de Ishtar, em Istambul, na Turquia. Construído por volta de 576 anos antes de Cristo, seguindo ordens do rei Nabucodonosor II.",
+      "parag2":" Foi feito em homenagem a deusa acádia Ishtar, que simboliza a fertilidade, este portão se tornou a principal entrada da cidade em que foi construído. Mais detalhes no video abaixo. :)",
+      "puzzleSVG":"../SVGs/leaoBabiloniaSVG.svg",
+      "puzzleIMG":"../Images/leaoBabiloniaPuzzle.jpeg",
+      "video":"https://www.youtube.com/embed/jd7axD_jSPo",
+      "lingua":"../Icons/united-states-of-america-flag.svg",
+      "imagem":"../Images/leaoBabilonico.jpeg"
+    },
+    "ZigurateUr":
+    { 
+      "id":"zu40",
+      "nome":"Zigurate de Ur",
+      "parag1":"Localiza-se, contemporaneamente, em Nasiriyah, no Iraque, onde fica a província de Dhi Qar. A belíssima esculutura foi construída na Idade de Bronze (século XXI, antes de Cristo.).",
+      "parag2":"Infelizmente, sucumbiu durante o Império Neobabilônico (Século VI antes de Cristo), sendo este zigurate restaurado a mando do rei Nebonido. Você pode ver mais informações no vídeo abaixo",
+      "puzzleSVG":"../SVGs/zigurateUrPUZZLE.svg",
+      "puzzleIMG":"../Images/zigurateUrPuzzle.jpeg",
+      "video":"https://www.youtube.com/embed/YzbrP_6TA9Q",
+      "lingua":"../Icons/brazil-flag.svg",
+      "imagem":"../Images/zigurateUr.jpeg"
+      
+    },
+
+    "placaBurney":
+    {
+      "id":"pb40",
+      "nome":"Placa de Burney",
+      "parag1":"Foi construída no período babilônico antigo. Atualmente, encontra-se o Sul do Iraque. Nesta placa está esculpido Ereshkigal, conhecida como a “Rainha da Noite”",
+      "parag2":"Neste período existiam diversas lendas que retratam esta divindade como sendo a mãe do Minotauro. No vídeo abaixo há mais informações sobre ela!",
+      "puzzleSVG":"../SVGs/placaBurneyPUZZLE.svg",
+      "puzzleIMG":"../Images/placaBurneyPuzzle.jpeg",
+      "video":"https://www.youtube.com/embed/A8WuAho3sA4",
+      "lingua":"../Icons/united-states-of-america-flag.svg",
+      "imagem":"../Images/placaBurney.jpeg"
+    },
+    "estatuaGudea":
+    {
+      "id":"eg41",
+      "nome":"Estátua de Gudea",
+      "parag1":"Representa Gudea, o Príncipe de Lagash, foi encontrada na área em que se compreende o Iraque nos dias atuais. O Príncipe foi um antigo governante da cidade-estado sumérica de Lagash.",
+      "parag2":"Ademais, englobava a cidade de Girsu, território em que se acredita ser onde a escultura foi encontrada. Caso tenha interesse em saber mais, veja o vídeo abaixo!",
+      "puzzleSVG":"../SVGs/gudeaSVG.svg",
+      "puzzleIMG":"../Images/gudeaPuzzle.jpeg",
+      "video":"https://www.youtube.com/embed/HBjYUTYas9E",
+      "lingua":"../Icons/united-states-of-america-flag.svg",
+      "imagem":"../Images/gudea.jpeg"
+    },
+    "lamassu":
+    {
+      "id":"la40",
+      "nome":"Escultura de Lamassu",
+      "parag1":"A escultura tem, aproximadamente, 4 metros e retrata a divindade mesopotâmica chamada de Lamassu, que é um touro com asas que possui uma cabeça humana. Ela era colocada em entradas de palácios assírios e de cidades.",
+      "parag2":"Já que estes povos acreditavam que eles iriam afastar o caos com sua grande imponência diante dos seres humanos. Se você quiser saber mais, então veja o vídeo abaixo.",
+      "puzzleSVG":"../SVGs/lamassuPUZZLE.svg",
+      "puzzleIMG":"../Images/lamassuPuzzle.jpg",
+      "video":"https://www.youtube.com/embed/R1GfIfB71cg",
+      "lingua":"../Icons/spain-flag.svg",
+      "imagem":"../Images/lamassu.jpeg"
+    }
+    
+  
+}
