@@ -39,7 +39,7 @@
     "parag2":"Na superfície dos zigurates havia um santuário que era utilizado com o fim de se contemplar o céu, sendo que os povos da região acreditavam que estes eram a moradia das divindades e que eles eram intermediários na interação entre deuses e humanos.",
     "legenda":"../Icons/brazil-flag.svg",
     "img":"../Images/zigurateUr.jpeg",
-    "vid":"naotemkk"
+    "vid":"https://www.youtube.com/embed/vyAf-MeyzjU"
   },
 
   "Literatura":
@@ -49,10 +49,11 @@
     "id":"li46",
     "conteudo":"Você vai descobrir qual é o livro mais antigo do mundo!",
     "botao":"Conte-me mais!",
-    "parag1":"A linguagem acádia foi utilizada na Mesopotâmia, nas antigas Assíria e Babilônia, sendo que, a linguagem suméria foi também utilizada anteriormente. As línguas semíticas (acádia e aramaico) foram usadas na área onde hoje se compreende o Oriente Médio, na Mesopotâmia (para textos que tratavam de assuntos religiosos, os babilônios utilizavam um idioma e escrita especial, que era usado exclusivamente para estes casos). A literatura acadiana e a literatura suméria evoluíram de forma que ambas dependeram uma da outra mutuamente. ",
-    "parag2":"Elas eram fortemente influenciadas por sua religião (histórias e mitos que explicavam a criação de suas divindades e do mundo, como por exemplo “O Mito da Criação”). Os sumérios foram os responsáveis pela criação do primeiro sistema de escrita conhecido, a escrita cuneiforme (recebe esse nome por ser realizada com objetos em forma de cunha) e sua literatura era composta principalmente pela poesia, sendo um dos principais exemplos o poema épico “Epopeia de Gilgamesh”, que conta a história da busca pela imortalidade feita pelo rei de Uruk, sendo este considerado o livro mais antigo que se há relatos, já que foi escrito por volta de 2000 a.C.",
+    "parag1":"A linguagem acádia foi utilizada na Mesopotâmia, nas antigas Assíria e Babilônia, sendo que, a linguagem suméria foi também utilizada anteriormente. As línguas semíticas (acádia e aramaico) foram usadas na área onde hoje se compreende o Oriente Médio, na Mesopotâmia (para textos que tratavam de assuntos religiosos, os babilônios utilizavam um idioma e escrita especial, que era usado exclusivamente para estes casos). Elas eram fortemente influenciadas por sua religião (histórias e mitos que explicavam a criação de suas divindades e do mundo, como por exemplo “O Mito da Criação”). ",
+    "parag2":"A literatura acadiana e a literatura suméria evoluíram de forma que ambas dependeram uma da outra mutuamente. Os sumérios foram os responsáveis pela criação do primeiro sistema de escrita conhecido, a escrita cuneiforme (recebe esse nome por ser realizada com objetos em forma de cunha) e sua literatura era composta principalmente pela poesia, sendo um dos principais exemplos o poema épico “Epopeia de Gilgamesh”, que conta a história da busca pela imortalidade feita pelo rei de Uruk, sendo este considerado o livro mais antigo que se há relatos, já que foi escrito por volta de 2000 a.C. No vídeo abaixo há mais informações sobre a Epopeia!",
     "legenda":"../Icons/brazil-flag.svg",
-    "img":"../Images/epopeia-de-gilgamesh.jpg "
+    "img":"../Images/epopeia-de-gilgamesh.jpg ",
+    "vid":"https://www.youtube.com/embed/Eqy8NA6cmYw"
   }
 
 }

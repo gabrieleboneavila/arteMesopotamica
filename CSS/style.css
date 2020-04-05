@@ -1093,15 +1093,26 @@ body{
   }
   #ulNav{
     display:flex
-    }
-    #menu{
-      display:none
-    }
-    #random1,#random2{
-      margin-bottom:15%;
-      width:230px;
-      height:200px!important
-    }
+   }
+   #menu{
+     display:none
+   }
+   #random1,#random2{
+     margin-bottom:15%;
+     width:230px;
+     height:200px!important
+   }
+   .breadCrumbs{
+    margin-left: -28.5%;
+   }
+   /* Arte */
+   .descricaoArte {
+     font-size:10px;
+     margin: 0 12%;
+   }
+   .arteImagem img{
+     width:246px;
+   }
 
 }
 

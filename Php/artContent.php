@@ -94,7 +94,7 @@
     </div>
     <!-- O segundo parágrafo que o usuário lerá -->
     <div class="descricaoArte">
-      <?= $parag1 ?>
+      <?= $parag2 ?>
     </div>
   </div>
   <div class="divPrincipal">
