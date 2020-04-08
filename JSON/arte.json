@@ -8,10 +8,10 @@
     "conteudo":"Descubra a principal utilidade delas, as mais famosas e muito mais!",
     "botao":"Vamos lá!",
     "parag1":"Geralmente estas eram produzidas como decoração para túmulos e templos, sendo que as estátuas são as que mais chamam atenção, elas poderiam ter três dimensões e serem feitas de diversos materiais como pedra, madeira ou argila, sendo que as estatuetas esculpidas em baixo-relevo possuíam um impressionante realismo. Abaixo Escultura de Gudea",
-    "legenda":"../Icons/united-states-of-america-flag.svg",
+    "legenda":"../Icons/brazil-flag.svg",
     "img":"../Images/gudea.jpeg",
     "parag2":"Os mesopotâmicos representavam normalmente seres-humanos, deuses e animais em suas esculturas, de uma forma endurecida, sem detalhes anatômicos e sem remeter movimento, normalmente de pé ou sentados, sendo que os olhos das estátuas receberam um acabamento com esmalte. Os membros das estatuetas eram representados fixados/juntos a sua estrutura física, que era normalmente esculpida trajada com um manto.",
-    "vid":"naotemkk"
+    "vid":"https://www.youtube.com/embed/z6Ka_3XItO8"
 
   },
   "Arquitetura":
@@ -21,11 +21,11 @@
     "titulo":"Arquitetura",
     "conteudo":"Você quer saber qual era o principal tipo de produção arquitetônica?",
     "botao":"Sim!",
-    "parag1": "O principal e mais desenvolvido tipo de produção artística dos Mesopotâmicos (mas não era tão notável quanto a egípcia), a maior parte de suas construções foram feitas com tijolos cozidos ao sol, já que não havia uma quantidade considerável de pedreiras na Mesopotâmia, as paredes de suas construções eram grossas e possuíam uma baixa vida útil por culpa da resistência do material.",
+    "parag1": "O principal e mais desenvolvido tipo de produção artística dos Mesopotâmicos (mas não era tão notável quanto a egípcia), a maior parte de suas construções foram feitas com tijolos cozidos ao sol, já que não havia uma quantidade considerável de pedreiras na Mesopotâmia, as paredes de suas construções eram grossas e possuíam uma baixa vida útil por culpa da resistência do material. Uma construção famosa é o Portal de Ishtar.",
     "legenda":"../Icons/brazil-flag.svg",
-    "img":"../Images/gudea.jpeg",
+    "img":"../Images/portalIshatar.jpg",
     "parag2":"Suas construções arquitetônicas eram frequentemente decoradas com conchas e madrepérolas, além de lapis-lazuli (uma pedra de coloração azulada, que era muito utilizada como adereço entre as sociedades da época). Os templos dos mesopotâmicos eram completos, com salas específicas para a estadia dos sacerdotes, por exemplo.",
-    "vid":"naotemkk"
+    "vid":"https://www.youtube.com/embed/2d9j8fa1NMA"
   },
   
   "Zigurates":
@@ -38,7 +38,7 @@
     "parag1":"Estes que são as construções mesopotâmicas mais famosas, eram templos com formato de pirâmide que possuíam muitos andares, eles tinham como objetivo ser um local para se realizar a veneração às divindades mesopotâmicas.",
     "parag2":"Na superfície dos zigurates havia um santuário que era utilizado com o fim de se contemplar o céu, sendo que os povos da região acreditavam que estes eram a moradia das divindades e que eles eram intermediários na interação entre deuses e humanos.",
     "legenda":"../Icons/brazil-flag.svg",
-    "img":"../Images/zigurateUr.jpeg",
+    "img":"../Images/zigurateArte.jpg",
     "vid":"https://www.youtube.com/embed/vyAf-MeyzjU"
   },
 

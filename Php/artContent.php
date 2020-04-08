@@ -7,8 +7,29 @@
     return $vetor[rand(0,(count($vetor)-1))];
   }
 
-// Definindo COOKIE
-  $id = $_COOKIE['idArte'];
+  // Vendo Se ID é válido 
+  function valida_id($value,$cert)
+    { 
+      // $cert pode ser verdadeiro (decodifica) ou falso (não faz nada, já é decodificado)
+      if($cert){
+        $value = base64_decode($value);
+      }
+      global $todosId;
+      foreach($todosId as $id)
+      {
+        if($id === $value)
+        {
+          return true;
+        }
+      } 
+      $pag = "artPage.php";
+      include "../Includes/pagErro.php";
+      die();
+    }
+  // Pegando as informações para copiar automaticamente
+  include '../Includes/urlAtual.php';
+
+
 
 // Informações para o vídeo (lingua e link do vídeo)
   $ling = "../Icons/brazil-flag.svg";
@@ -20,6 +41,32 @@
   $info    = [];
   $sorteio = [];
 
+// Para fazer validação de ID's (se usuário não alterou o cookie ou link)
+$todosId = [];
+foreach ($data as $valor) {
+  $todosId[] = $valor['id'];
+}
+
+// Definindo COOKIE
+  //  Caso seja por um link compartilhado
+if ($_GET['c']) {
+    valida_id($_GET['c'],true);
+    $id =base64_decode($_GET['c']);
+}
+// Caso seja por outro meio
+else
+{
+  $id = $_COOKIE['idArte'];
+  valida_id($id,false); 
+}
+
+// Link Para Compartilhar
+  //Codificação, para usuário não saber nome do cookie 
+  $cod  = base64_encode($id);
+
+  //Colocando informações 
+    $compa  =  UrlAtual()."?c=".$cod;
+
 // Passando $data pelo foreach que tem o mesmo id advindo do cookie
   foreach ($data as $valor) {
     if ($valor['id'] === $id) {
@@ -29,6 +76,7 @@
     }
   }
 
+
 // Variáveis para colocar no Título, texto, imagem, video, etc.
   $nome   = $info['titulo'];
   $parag1 = $info['parag1'];
@@ -36,7 +84,6 @@
   $img    = $info['img'];
   $vide   = $info['vid'];
   $ling   = $info['legenda'];
-
 // Links para breadCrumbs e seus nomes
   $bread2 = [["Arte", "artPage.php"]];
   $bread3 = $nome;
@@ -77,7 +124,9 @@
 </head>
 
 <body>
-  <?php include "../Includes/navBar.html" ?>
+  <?php include "../Includes/navBar.html";
+      // Adicionando Botão Compartilhar
+        include "../Includes/compartilhar.php" ?>
   <div id="mae">
     <?php include "../Includes/breadCrumbs.php" ?>
     <!-- Nome do assunto que o usuário está vendo -->
@@ -97,18 +146,19 @@
       <?= $parag2 ?>
     </div>
   </div>
-  <div class="divPrincipal">
-    <?php include "../Includes/videoDescritivo.php" ?>
+  <!-- Video -->
+  <div class="divPrincipal ">
+    <?php include "../Includes/videoDescritivo.php"; $vide; ?>
   </div>
-  <div id="divSegunda">
+  <div id="divSegunda" class='pb-7'>
     <!-- Curiosidade aleátoria -->
     <div class="title-grey-normal">Curiosidade</div>
     <!-- Conteúdo é gerado aleatoriamente, por função utilizada em: addaquiondeé -->
-    <div class="mt-5 descricaoArte">
+    <div class="mt-3 descricaoArte">
       <?= $selecionada ?>
     </div>
   </div>
-  <div id="divTerciaria">
+  <div id="divTerciaria" class='mt-4'>
     <?php
     $tituloPrincipalGatilho = "Leia Também!";
     // Informações necessárias para o funcionamento adequado do Random1 e 2(quadrado que contem informações sobre os jogos que o sistema oferece ao usuário). As váriaveis se autoexplicam, talvez dataID possa causar confusão, mas ela é, nada mais, do que o valor que será colocado no 'data-id=', você pode ver isso no include gatilhoparaoutrapag-leia-tambem, desculpem pelo norme gigante.
@@ -136,14 +186,20 @@
 
   <!--Redirecionar Quando Clica Nos Cookies-->
   <script>
+    // Bug que não faz nenhum sentido do YOUTUBE arg ༼ つ ಥ_ಥ ༽つ
+    var iframeSRC = $('iframe').attr("src");
+    $('iframe').attr("src",iframeSRC);
+    
     $('.botaoEnviarPequeno').click((e)=>
     {
       var $this  = e.target,
           cookie = $($this).attr('data-id')
-
           document.cookie = "idArte = "+cookie
           $("html").animate({scrollTop:0},10)
-          location.reload()
+         
+
+            location.reload()
+         
           
     })
   </script>

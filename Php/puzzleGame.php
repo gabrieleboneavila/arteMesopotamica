@@ -110,7 +110,8 @@
 
 <head>
   <!-- LINKS CSS  -->
-  <?php include "../Includes/linksCSSinicio.html"?>
+  <?php include "../Includes/linksCSSinicio.html";
+  ?>
 
   <title><?php echo $nome." - $nivel" ?></title>
 </head>
