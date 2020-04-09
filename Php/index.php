@@ -30,10 +30,11 @@
 					<!-- Inclui Zigurate -->
 					<?php include '../Includes/zigurate.php' ?>
 				</div>
+				</div>
+			</div>
 				<div id="divFilha1">Arte Mesopotâmica</div>
 				<div id="divFilha2">Aprenda Divertindo-se!</div>
-			</div>
-		</div>
+		
 		<div>
 			<?php include "../Includes/simboloMaior.html" ?>
 

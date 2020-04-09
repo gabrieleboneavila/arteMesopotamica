@@ -240,7 +240,7 @@ html >{
 	height:100%;
 	width:100%;
  	position: fixed;
-  z-index:999;
+  z-index:9999;
   box-shadow: 10px 5px 5px black;
  	display:flex;
 	justify-content:flex-end;
@@ -343,7 +343,7 @@ body{
   color:#ffcdab;
 
 }
-#divFilha >::selection,#divSegunda > ::selection,.curva-escura > ::selection,#tituloQuiz > ::selection,.carC-lin1 ::selection,.carC-lin2 ::selection,.carC-lin3  ::selection,#direitosAutorais::selection,.title-grey-normal::selection,.descricaoArte::selection,.subtitle-grey-normal::selection,#divFilha2::selection,#divFilha1::selection,#simboloMaior::selection{
+#divFilha >::selection,#divSegunda > ::selection,.curva-escura > ::selection,#tituloQuiz > ::selection,.carC-lin1 ::selection,.carC-lin2 ::selection,.carC-lin3  ::selection,#direitosAutorais::selection,.title-grey-normal::selection,.descricaoArte::selection,.subtitle-grey-normal::selection,#divFilha2::selection,#divFilha1::selection,#simboloMaior::selection, img::selection,.cronometro > ::selection,.cronometro::selection{
   color:#ffcdab;
   background-color:#5d5d5a
 }
@@ -399,7 +399,7 @@ body{
 /* Parte Zigurate */
 #titulo{
   height: 50%;
-  margin-top:5.4%;
+  margin-top:7.4%;
   font-size:26px;
   display: flex;
   align-items: center;
@@ -586,7 +586,8 @@ body{
   height: 50px;
   transform: scale(2.4);
   bottom:22%;
-  box-shadow: 4px -9px 32px 0px rgba(0,0,0,0.75);   background-color:white;
+  box-shadow: 0px 0px 36px 5px rgba(0,0,0,0.53), -7px 1px 29px -13px rgba(0,0,0,0.62); 
+  background-color:white;
    background-repeat: no-repeat;
   background-position: center;
   z-index:100;
@@ -1005,7 +1006,10 @@ body{
   }
   .descricao{
     font-size: 9px;
-    margin:0px 15%
+    margin:9% 15% !important
+  }
+  .imagemDescricao{
+    margin:0px !important
   }
   .textoCartaoRandom{
     font-size:10px;
@@ -1127,12 +1131,19 @@ body{
      height:200px!important
    }
    .breadCrumbs{
+    margin-top:30%;
     margin-left: -28.5%;
    }
    /* Arte */
    .descricaoArte {
      font-size:10px;
-     margin: 0 12%;
+     margin: 0px 12% !important;
+   
+    }
+   /* Para não ter margin de mais */
+   .arteContent{
+    margin-top:10% !important;
+    margin-bottom:10% !important
    }
    .arteImagem img{
      width:246px;
@@ -1147,9 +1158,6 @@ body{
     height: 148.9px;
   }
   
-  .title-grey-normal{
-    margin:0 3.5%
-  }
   iframe{
     width:232px !important;
     height: 130.8px !important;
@@ -1197,7 +1205,8 @@ body{
     font-size: 30px;
   }
   #titulo{
-    font-size:12.75px
+    font-size:12.75px;
+    margin-top:25%
   }
   #puzzleSVG{
     width:100px;
@@ -1268,4 +1277,9 @@ body{
   }
 }
 html{
+}
+
+/* Box-shadow */
+.imgPuzzle,.retangle, .imagemDescricao, .arteImagem, iframe{
+  box-shadow: 5px 7px 20px rgba(0, 0, 0, 0.5)  ; 
 }

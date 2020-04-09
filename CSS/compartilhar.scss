@@ -9,13 +9,15 @@ $tamanho:50px;
 #compartilhar{
     @extend %flex;
     position: fixed;
-    z-index: 9999;
+    transition: 1s;
+    z-index: 9998;
     top:50%;
     background-color: $corPrimaria;
     width:$tamanho;
     height:$tamanho;
     cursor: pointer;
-    box-shadow: -2px 1px 20px -5px rgba(0,0,0,1);   div
+    box-shadow: -2px 1px 20px -5px rgba(0,0,0,1);   
+    div
     {
       width:50%;
       height: 50%;
@@ -24,11 +26,16 @@ $tamanho:50px;
         @extend %flex;
         width: 100%;
         height: 100%;
-        #share{
-          fill:red;
+        #path{
+
+          fill:$corSecundaria !important 
         }
       }
     }
 } 
 
+#compartilhar:hover{
+  transform: scale(.97);
+  transition: 1s;
+}
 @import 'media';

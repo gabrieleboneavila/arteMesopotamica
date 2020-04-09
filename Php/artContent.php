@@ -53,11 +53,13 @@ foreach ($data as $valor) {
   if (count($_GET)>0) {
       valida_id($_GET['c'],true);
       $id =base64_decode($_GET['c']);
+      setcookie("idArte",$id);
   }
   // Caso seja por outro meio
   else
   {
     $id = $_COOKIE['idArte'];
+    setcookie("idArte",$id);
     valida_id($id,false); 
   }
 
@@ -131,7 +133,7 @@ foreach ($data as $valor) {
   <div id="mae">
     <?php include "../Includes/breadCrumbs.php" ?>
     <!-- Nome do assunto que o usuário está vendo -->
-    <div class="mt-5 mb-5 title-grey-normal">
+    <div class="mt-5 arteContent mb-5 title-grey-normal">
       <?= $nome?>
     </div>
     <!-- Aqui Coloca-se a descrição do assunto que o usuário está lendo -->
@@ -199,7 +201,7 @@ foreach ($data as $valor) {
           $("html").animate({scrollTop:0},10)
          
 
-            location.reload()
+            window.location="artContent.php"
          
           
     })

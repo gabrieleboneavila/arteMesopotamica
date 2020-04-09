@@ -39,7 +39,7 @@
     <div class="title-white-normal mt-5">
       Puzzles
     </div>
-    <div class="subtituloCartoes">
+    <div class="subtituloCartoes mb-4">
       Se o individuo é passivo intelectualmente, não conseguirá ser livre moralmente. - J. Piaget
     </div>
     <div class="cartoesUnico">
@@ -63,7 +63,7 @@
     <div class="title-grey-normal">
       Testes
     </div>
-    <div class="subtitle-grey-normal">
+    <div class="subtitle-grey-normal mb-4">
       O conhecimento pronto estanca o saber e a dúvida provoca a inteligência. - Vigotsky
     </div>
     <div class="cartoesUnico">
