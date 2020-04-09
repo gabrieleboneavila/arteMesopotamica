@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="treant-js-master/examples/timeline/timeline.css">
+  <link rel="stylesheet" href="treant-js-master/Treant.css">
+  <title>Arvore</title>
+</head>
+<body>
+  <div id="tree-simple" style="width:335px; height: 160px"> </div>   
+  <script src='treant-js-master/Treant.js'></script>
+  <script src='treant-js-master/vendor/raphael.js'></script>
+  <script src='treant-js-master/vendor/jquery.easing.js'></script>
+
+  <script>
+    simple_chart_config = {
+    chart: {
+        container: "#tree-simple",
+        	hideRootNode: true,
+		connectors: {
+			type: 'step',
+			style: {
+				"arrow-end": "classic-wide-long",
+				"stroke-width": 2,
+				"stroke": "#665B57"
+			}
+		},
+		node: {
+			collapsable: true
+		},
+		animation: {
+			nodeAnimation: "easeOutBounce",
+			nodeSpeed: 700,
+			connectorsAnimation: "bounce",
+			connectorsSpeed: 700
+		}
+    },
+    
+    
+    nodeStructure: {
+        text: { name: "." },
+        children: [
+          {
+            collapsed: true,
+            text : {nome : "Home"},
+            children : 
+            [
+              {
+                text: {nome: "Arte"}
+              },
+              {
+                text: {nome: "Quiz"}
+              },
+              {
+                text: {nome: "Ajuda"}
+              }
+            ]
+          }
+        ]
+    }
+};
+var chart = new Treant(simple_chart_config, function() { alert( 'Tree Loaded' ) }, $,   );    
+  </script>
+</body>
+</html>
