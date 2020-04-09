@@ -26,6 +26,7 @@ $("#menu").click(function(){
   }, 2000);
 })
 $("#botaoSVG, #darkNav").click(()=>{
+  $("#darkNav").css("display","none")
   saida()
 })
 
@@ -51,12 +52,9 @@ function saida(){
     "animation-name":"",})
     $("#menu").css({
     "animation-name":"",
-    
- 
    })
- 
-   
-  
+   $("#darkNav").css("display","flex")
+
   }, 2000);
 
 }

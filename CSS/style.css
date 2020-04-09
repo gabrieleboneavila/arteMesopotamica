@@ -343,12 +343,16 @@ body{
   color:#ffcdab;
 
 }
-#divFilha >::selection,#divSegunda > ::selection,.curva-escura > ::selection,#tituloQuiz > ::selection,.carC-lin1 ::selection,.carC-lin2 ::selection,.carC-lin3  ::selection,#direitosAutorais::selection{
+#divFilha >::selection,#divSegunda > ::selection,.curva-escura > ::selection,#tituloQuiz > ::selection,.carC-lin1 ::selection,.carC-lin2 ::selection,.carC-lin3  ::selection,#direitosAutorais::selection,.title-grey-normal::selection,.descricaoArte::selection,.subtitle-grey-normal::selection,#divFilha2::selection,#divFilha1::selection,#simboloMaior::selection{
   color:#ffcdab;
   background-color:#5d5d5a
 }
-
-.tituloCartoes::selection,.tituloCartoes>::selection,.carE-lin1 ::selection,.carE-lin2 ::selection,.carE-lin3 ::selection{
+.subtitle-grey-normal span::selection{ 
+  color:#ffcdab;
+  background-color:var(--corSpan);
+  
+}
+.tituloCartoes::selection,.tituloCartoes>::selection,.carE-lin1 ::selection,.carE-lin2 ::selection,.carE-lin3 ::selection,.title-white-normal::selection,.subtitle-white-normal::selection, .subtituloCartoes::selection{
   color:#5d5d5a;
   background-color: #ffcdab;
 }

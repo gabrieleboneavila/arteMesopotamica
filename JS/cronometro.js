@@ -1,3 +1,7 @@
+// Cor do Span de nível com selection
+
+var link = $("span",".subtitle-grey-normal"), cor = $(link).css("color")
+$(link).css("--corSpan",cor)
 // Cronometro
 
 var segundos =  Math.round($("#segundos").text()),

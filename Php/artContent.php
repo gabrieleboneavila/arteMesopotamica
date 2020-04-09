@@ -48,25 +48,26 @@ foreach ($data as $valor) {
 }
 
 // Definindo COOKIE
-  //  Caso seja por um link compartilhado
-if ($_GET['c']) {
-    valida_id($_GET['c'],true);
-    $id =base64_decode($_GET['c']);
-}
-// Caso seja por outro meio
-else
-{
-  $id = $_COOKIE['idArte'];
-  valida_id($id,false); 
-}
+    //  Caso seja por um link compartilhado
+   
+  if (count($_GET)>0) {
+      valida_id($_GET['c'],true);
+      $id =base64_decode($_GET['c']);
+  }
+  // Caso seja por outro meio
+  else
+  {
+    $id = $_COOKIE['idArte'];
+    valida_id($id,false); 
+  }
 
 // Link Para Compartilhar
   //Codificação, para usuário não saber nome do cookie 
   $cod  = base64_encode($id);
 
   //Colocando informações 
+ 
     $compa  =  UrlAtual()."?c=".$cod;
-
 // Passando $data pelo foreach que tem o mesmo id advindo do cookie
   foreach ($data as $valor) {
     if ($valor['id'] === $id) {

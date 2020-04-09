@@ -67,7 +67,6 @@ for(let a=0; a<cookie.length; a++)
 	}
 }
 let resul = cookie==0 ? "" : " Além disso, você ganhou um cookie! Aproveite!"
-console.log(resul)
 function validar(){
 	var quebraCabecaOK=true;
 	for(var i=0;i<4;i++){
