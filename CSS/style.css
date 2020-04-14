@@ -123,7 +123,10 @@ html >{
   margin-bottom:10%
 }
 .mb-15{
-  margin-bottom:15%
+  margin-bottom:15% 
+}
+.pt-15{
+  padding-top:15% !important ;
 }
 .mt-15{
   margin-top:15%
@@ -1275,8 +1278,6 @@ body{
   #divFilha1{
     font-size:25px
   }
-}
-html{
 }
 
 /* Box-shadow */

@@ -14,7 +14,7 @@
    viewBox="0 0 48.938011 12.527284"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)"
    sodipodi:docname="logo.svg">
   <defs
      id="defs2">
@@ -46,9 +46,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568543"
-     inkscape:cx="31.680305"
-     inkscape:cy="20.898782"
+     inkscape:zoom="64"
+     inkscape:cx="95.664335"
+     inkscape:cy="40.327837"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -70,7 +70,7 @@
        id="guide872"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="79.563274,-1.537768"
+       position="79.563274,-1.5377676"
        orientation="0,1"
        id="guide963"
        inkscape:locked="false" />
@@ -78,6 +78,16 @@
        position="60.252197,12.225232"
        orientation="0,1"
        id="guide999"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="23.011907,1.6370258"
+       orientation="0,1"
+       id="guide958"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="25.02793,10.43037"
+       orientation="1,0"
+       id="guide960"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
@@ -119,13 +129,13 @@
        id="path969"
        inkscape:connector-curvature="0" />
     <path
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.25419807px;line-height:1.25;font-family:'Montserrat Alternates';-inkscape-font-specification:'Montserrat Alternates';letter-spacing:0px;word-spacing:0px;fill:#ffcdab;fill-opacity:1;stroke:#ffcdab;stroke-width:0.32850876;stroke-opacity:1"
-       d="m -148.82882,44.892579 h -1.38183 v 9.664289 h 1.38183 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.25419807px;line-height:1.25;font-family:'Montserrat Alternates';-inkscape-font-specification:'Montserrat Alternates';letter-spacing:0px;word-spacing:0px;fill:#ffcdab;fill-opacity:1;stroke:#ffcdab;stroke-width:0.31270817;stroke-opacity:1"
+       d="m -148.41346,45.493621 h -1.36619 v 8.857198 h 1.36619 z"
        id="path1038"
        inkscape:connector-curvature="0" />
     <path
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.25419807px;line-height:1.25;font-family:'Montserrat Alternates';-inkscape-font-specification:'Montserrat Alternates';letter-spacing:0px;word-spacing:0px;fill:#ffcdab;fill-opacity:1;stroke:#ffcdab;stroke-width:0.28226459;stroke-opacity:1"
-       d="m -150.23519,42.960935 v 1.218549 h 1.43091 v -1.218549 z"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.25419807px;line-height:1.25;font-family:'Montserrat Alternates';-inkscape-font-specification:'Montserrat Alternates';letter-spacing:0px;word-spacing:0px;fill:#ffcdab;fill-opacity:1;stroke:#ffcdab;stroke-width:0.33720633;stroke-opacity:1"
+       d="m -149.77334,42.783791 v 1.808529 h 1.37597 v -1.808529 z"
        id="text997"
        inkscape:connector-curvature="0" />
   </g>

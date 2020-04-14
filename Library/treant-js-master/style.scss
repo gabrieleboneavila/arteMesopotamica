@@ -1,0 +1,204 @@
+
+
+#tree-simple{
+  width: 100%;
+  margin-top: 5%;
+}
+.Treant {
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
+}
+.Treant > .node,
+.Treant > .pseudo {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+}
+.Treant.Treant-loaded .node,
+.Treant.Treant-loaded .pseudo {
+  visibility: visible;
+}
+.Treant > .pseudo {
+  width: 0;
+  height: 0;
+  border: none;
+  padding: 0;
+}
+.Treant .collapse-switch {
+  width: 3px;
+  height: 3px;
+  display: block;
+  border: 1px solid black;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  cursor: pointer;
+}
+
+.Treant > .node img {
+  border: none;
+  float: left;
+}
+
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+
+/* optional Container STYLES */
+.chart {
+  height: 400px;
+  width: 900px;
+  margin: 5px;
+  margin: 5px auto;
+  border: 3px solid #ddd;
+  border-radius: 3px;
+}
+.node {
+  color: #ffa45c;
+  border: 2px solid #ffcdab;
+  border-radius: 3px;
+  background: #fff;
+  transition: background 0.7s, color 0.7s;
+}
+.node p {
+  font-size: 17px;
+  line-height: 20px;
+  height: 20px;
+  font-weight: bold;
+  padding: 3px;
+  margin: 0;
+}
+
+.node.main-date {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.node.main-date p.node-name {
+  top: -15px;
+  font-size: 15px;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  left: -30px;
+  transition: top 1s, opacity 1s;
+}
+.node.main-date:hover p.node-name {
+  opacity: 1;
+  top: -25px;
+}
+
+.Treant .collapse-switch {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.Treant .node.collapsed {
+  background-color: #ffa45c;
+  color:#52524b;;
+}
+
+.Treant .node.collapsed .collapse-switch {
+  background: none;
+}
+.node{
+  padding:10px
+}
+.timeline .node-desc {
+  position: absolute;
+  left: -999px;
+  width: 2000px;
+  background: #ffcdab;
+  height: 3px;
+  padding: 0;
+  z-index: -1;
+  top: 3px;
+}
+// Cores
+$pri: #FFCDAB;
+$sec: #5D5D5A;
+// Redireciona
+#retangulo{
+  transform:scale(0.7);
+  position: absolute;
+  display: flex;
+  max-width:182px;
+  top:10px;
+
+  flex-direction:column;
+  #content{
+    width: 182px ;
+    height:auto ;
+    padding:12%;
+    text-align:center;
+    background: $pri;
+    color: $sec;
+    display:flex;
+    font-size:10px;
+    z-index:9999;
+  }
+  #seta{
+    z-index:999;
+    width:65.736px;
+    height:34.356px;
+    position:relative;
+    background: url(triangulo.svg) no-repeat;
+    left:50px;
+    top:-5px
+  } 
+}
+
+.noOver{
+  overflow:visible !important ;
+}
+
+@keyframes aparece
+{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(0.7);
+  }
+}
+
+@keyframes desaparece
+{
+  from{
+    transform: scale(0.7);
+  }
+  to{
+    transform: scale(0.0);
+  }
+}

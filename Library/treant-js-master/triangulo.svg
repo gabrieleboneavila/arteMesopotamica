@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="15.180578mm"
+   height="7.2251921mm"
+   viewBox="0 0 15.180578 7.225192"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="triangulo.svg"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect828"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect828-3"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter960">
+      <feGaussianBlur
+         stdDeviation="0.6 0.21"
+         result="fbSourceGraphic"
+         id="feGaussianBlur958" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix962" />
+      <feGaussianBlur
+         id="feGaussianBlur964"
+         stdDeviation="0.6 0.21"
+         result="blur"
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="54.068683"
+     inkscape:cy="1.5456722"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1360"
+     inkscape:window-height="700"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-96.861825,-170.87003)">
+    <path
+       style="fill:#17181e;fill-opacity:1;stroke:#17181e;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter960)"
+       d="m 98.422004,171.71741 c 0,0 7.617176,7.34991 7.617176,7.34991 0,0 8.0515,-7.45014 8.0515,-7.45014 0,0 -15.668676,0.10023 -15.668676,0.10023 z"
+       id="path826-6"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect828-3"
+       inkscape:original-d="m 98.422004,171.71741 c 0,0 7.617176,7.34991 7.617176,7.34991 0,0 8.0515,-7.45014 8.0515,-7.45014 0,0 -15.668676,0.10023 -15.668676,0.10023 z"
+       transform="matrix(0.80737397,0,0,0.80817182,18.663509,32.775965)" />
+    <path
+       style="fill:#ffcdab;fill-opacity:1;stroke:#ffcdab;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 98.422004,171.71741 c 0,0 7.617176,7.34991 7.617176,7.34991 0,0 8.0515,-7.45014 8.0515,-7.45014 0,0 -15.668676,0.10023 -15.668676,0.10023 z"
+       id="path826"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect828"
+       inkscape:original-d="m 98.422004,171.71741 c 0,0 7.617176,7.34991 7.617176,7.34991 0,0 8.0515,-7.45014 8.0515,-7.45014 0,0 -15.668676,0.10023 -15.668676,0.10023 z"
+       transform="matrix(0.80796137,0,0,0.80801556,18.601222,32.803952)" />
+  </g>
+</svg>
