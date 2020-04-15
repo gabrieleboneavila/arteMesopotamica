@@ -33,7 +33,7 @@
 
   <div  id="retangulo"> 
     <div id="content">
-      Clique aqui para acessar essa página :)
+      Acessar :)
     </div>
     <div id="seta"></div>
   </div>

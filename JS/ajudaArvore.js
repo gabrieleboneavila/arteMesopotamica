@@ -70,7 +70,7 @@ simple_chart_config = {
 // Redireciona
 $(()=>{
 var reta = $("#retangulo")
-var $this, limpar 
+var $this, limpar,verifica,completo 
 
 $("#tree-simple").append(reta)
 $(".redireciona").mouseover((e)=>{
@@ -85,25 +85,48 @@ $(".redireciona").mouseover((e)=>{
   var  topVer = parseInt($($this).css("top")) , left = parseInt($($this).css("left"))
 
   // Ajustando valores par o #retangulo não ficar sobre os outros conteúdos
-  left-=50
-  topVer-=80
+  left-=30
+  topVer-=75
   // Verificando se não é auto (senão buga)
   if(topVer !== 'auto')
   {
+    verifica = false; completo = true
     $("#retangulo").css({
       "top":topVer+'px',
-      "animation": "aparece 1s ",
+      "animation": "aparece 0.2s forwards ",
       "left":left+'px',
       "display":"flex"
     })
+    setTimeout(()=>{
+      $("#retangulo").css({
+      " display":"flex",
+        "animation": "",
+      })
+    },1000)
   }
 
 })
 // Mouse Out
-$(".redireciona").mouseout(()=>{
-  limpar = setInterval(()=>{
-    $("#retangulo").css("animation","desaparece 1s  ")
-  },1000)
+
+if(completo){
+  setTimeout(()=>{
+  if(!verifica)
+  {
+    console.log("foi")
+    $("#retangulo").css({
+      "top":topVer+'px',
+      "animation": "desaparece 0.2s backwards ",
+      "left":left+'px',
+      "display":"flex"
+    })
+  }
+},3000)
+  completo = false
+}
+$("#retangulo").mouseover(()=>{
+    verifica = true
+    console.log("gayyyy")
 })
+
 })
 
