@@ -16,6 +16,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Para mudar margin-top do título apenas nessa pag e do puzzleGame -->
+  <style>
+    #titulo{
+      margin-top: 2% !important;
+    }
+  </style>
   <!-- LINKS CSS  -->
   <?php include "../Includes/linksCSSinicio.html"?>
   <title>Puzzle</title>

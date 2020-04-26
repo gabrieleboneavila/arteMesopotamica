@@ -1,4 +1,45 @@
 <?php
+if($_COOKIE['nivel'] === "?")
+{
+  include "../Includes/linksCSSinicio.html";
+  include "../Includes/opcoesNiveis.php";
+  
+  echo "
+  <style>
+  .modal-header{
+    height:55px
+  }
+  </style>
+  <title>Escolhendo Nível</title>
+  <script
+  src='https://code.jquery.com/jquery-3.5.0.min.js'></script>
+  
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' ></script>
+
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+
+  ";
+
+  echo "<script> $(()=>{
+    var recOb = 0, botao = 'bao tenmos ho';  
+    
+    $('#escolheNivel').trigger('click') ;
+      })
+    $('.botaonivel').click((e)=>{
+      var thiss = e.target;
+      document.cookie = 'idNivel = '+$(thiss).text();
+      document.cookie = 'nivel = '+$(thiss).text();
+
+      location.reload()
+    })
+      </script>
+  
+      
+      ";
+      
+  die();
+}
+
 // Vendo Se ID é válido 
 function valida_id($value)
 { 
@@ -180,7 +221,12 @@ $bread3 = $nome
 
   <?php include "../Includes/linksCSSinicio.html";
   ?>
-
+    <!-- Para mudar margin-top do título apenas nessa pag e puzzlePage-->
+    <style>
+    #titulo{
+      margin-top: 2% !important;
+    }
+  </style>
   <title><?php echo $nome . " - $nivel" ?></title>
 </head>
 
@@ -250,7 +296,7 @@ $bread3 = $nome
     $tituloRandom2   = $sorteioObras[$sorteado2Obra][0];
     $textoRandom2    = "Você encara jogar no nível <br /><b>" . $niveisSorteio[$valorNivel] . "</b>? Eu aposto um cookie,
          aceita?";
-    $dataID2         = $sorteioObras[$sorteado1Obra][1];
+    $dataID2         = $sorteioObras[$sorteado2Obra][1];
     $dataNivel       = $niveisSorteio[$valorNivel];
     $botao2          = "Sim!";
     $icon2           = "url(../Icons/filter_b_and_w-24px.svg)";

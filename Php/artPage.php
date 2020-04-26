@@ -37,45 +37,42 @@ foreach ($data as $informacao) {
       <?php include '../Includes/simboloMaior.html' ?>
     </div>
   </div>
-
-
-
   <?php
-  $cont = 0;
-  $contC = 0;
-  $contE = 0;
-  $cor;
-  foreach ($Puzzles as $informacao) {
-    $cont % 2 !== 0 ? $classe = "curva-clara"   : $classe = "curva-escura";
-    if ($cont % 2 === 0) {
-      $cor           = "carC-lin" . ($contC % 3 + 1);
-      $contC++;
-    } else {
-      $cor = "carE-lin" . ($contE % 3 + 1);
-      $contE++;
-    }
-    // data-id serve para redirecionar para o cookie
-    echo "<div data-id='${informacao['id']}'${informacao['estilo']} class=\"$classe \" >
-          <div class=\"cartoesUnico\">
-            <div style='--imagemArte:url(${informacao['icone']})' class=\"arteIcones cartao $cor\">
-              <div class=\"contentCard\">
-                <div class=\"tituloCartao\">
-                  ${informacao['titulo']} </div>
-                <div class=\"textoCartao\">
-                ${informacao['conteudo']}
+   $cont = 0;
+   $contC = 0;
+   $contE = 0;
+   $cor;
+   foreach ($Puzzles as $informacao) {
+     $cont % 2 !== 0 ? $classe = "curva-clara"   : $classe = "curva-escura";
+     if ($cont % 2 === 0) {
+       $cor           = "carC-lin" . ($contC % 3 + 1);
+       $contC++;
+     } else {
+       $cor = "carE-lin" . ($contE % 3 + 1);
+       $contE++;
+     }
+     // data-id serve para redirecionar para o cookie
+     echo "<div data-id='${informacao['id']}'${informacao['estilo']} class=\"$classe \" >
+            <div class=\"cartoesUnico\">
+              <div style='--imagemArte:url(${informacao['icone']})' class=\"arteIcones cartao $cor\">
+                <div class=\"contentCard\">
+                  <div class=\"tituloCartao\">
+                    ${informacao['titulo']} </div>
+                  <div class=\"textoCartao\">
+                  ${informacao['conteudo']}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <button id='btn2' class=\"botaoEnviar\">
-              ${informacao['botao']}
-              </button>
-            </div>
-         </div>
-        </div>  
-          ";
-    $cont++;
-  }
+              <div>
+                <button id='btn2' class=\"botaoEnviar\">
+                ${informacao['botao']}
+                </button>
+              </div>
+           </div>
+          </div>  
+            ";
+     $cont++;
+   }
   ?>
   </div>
   </div>

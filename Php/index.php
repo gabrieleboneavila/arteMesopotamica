@@ -12,7 +12,7 @@
 	<!-- NavBar -->
 	<?php include "../Includes/navBar.html" ?>
 	<!-- Navbar -->
-
+	
 	<div id="mae">
 		<div id="titulo">
 			<div id="divFilha">
@@ -40,7 +40,7 @@
 
 		</div>
 	</div>
-
+	</div>
 	<!----------------------Primeira div Principal------------------->
 
 	<div class="divPrincipal">
@@ -173,11 +173,8 @@
 				</div>
 			</div>
 		</div>
-		<form method="POST" action="">
 			<button type="submit" class="botaoEnviar">
 				Obtenha Ajuda
-			</button>
-		</form>
 	</div>
 
 	<!-- Footer -->
