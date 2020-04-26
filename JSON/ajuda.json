@@ -1,0 +1,18 @@
+{
+  "Mapa":
+  {
+    "icone":"../Icons/map-pink-24dp.svg",
+    "titulo":"Mapa",
+    "conteudo":"Encontre todas as páginas do site!",
+    "id":"ajudaArvore.php",
+    "botao":"Vamos lá!"
+  },
+  "Manual":
+  {
+    "icone":"../Icons/grey-book-open.svg",
+    "titulo":"Manual",
+    "conteudo":"Está perdido? Aqui você encontra a solução!",
+    "id":"ajudaManual.php",
+    "botao":"Mostre-me!"
+  }
+}
