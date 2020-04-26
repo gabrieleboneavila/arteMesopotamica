@@ -50,8 +50,11 @@ html >{
 #paintSVG img{
   width: 300px;
 }
+/* PAI */
+
 /* BreadCrumbs */
 .breadCrumbs{
+  filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
   margin-left:-38.5%;  
   display:flex;
   color:#ffcdab;
@@ -227,6 +230,10 @@ html >{
   align-items: center;
   justify-content: center;
 }
+#brainSVG img{
+  width:300px;
+
+}
 /*Div Responsiva ou NavBar responsiva*/
 #menu{
   display:none;
@@ -388,7 +395,10 @@ body{
   user-select: none;
 
 }
-
+#manSVG img{
+  margin-top: 20%;
+  width: 300px;
+}
 .siteInfo{
   font-size:17px;
   color:#FCDEC9
@@ -476,6 +486,7 @@ body{
 
     }
   }
+  
 #zigurate{
   margin-top:10%;
   width:480px;
@@ -496,6 +507,7 @@ body{
 #downArrow{
   width:400px;
 }
+
 #mae{
   position:relative;
   z-index:102;
@@ -1189,7 +1201,10 @@ body{
   #menu{
     display:block
   }
-
+  #ajudIcon img{
+    width:140px;
+    margin-bottom: 10%;
+  }
   .title-white-normal,.title-grey-normal{
     font-size:20px;
     margin-top:10%;
