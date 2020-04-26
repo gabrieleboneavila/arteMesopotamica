@@ -27,7 +27,7 @@
     </div>
 
     <div id="divFilha1">Manual</div>
-
+    <div id="divFilha2">Tire todas as tuas dúvidas!</div>
     <!-- Simbolo Maior -->
     <div><?php include "../Includes/simboloMaior.html" ?></div>
   </div>
