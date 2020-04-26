@@ -1,7 +1,7 @@
-
-
-#tree-simple{
-  width: 100%;
+#tree-simple {
+  width: 98vw;
+  overflow: hidden;
+  height: auto;
   margin-top: 5%;
 }
 .Treant {
@@ -41,7 +41,6 @@
   float: left;
 }
 
-
 body,
 div,
 dl,
@@ -73,7 +72,6 @@ body {
   background: #fff;
 }
 
-
 /* optional Container STYLES */
 .chart {
   height: 400px;
@@ -84,7 +82,7 @@ body {
   border-radius: 3px;
 }
 .node {
-  color: #ffa45c;
+  color: #ffcdab;
   border: 2px solid #ffcdab;
   border-radius: 3px;
   background: #fff;
@@ -124,16 +122,24 @@ body {
   height: 100%;
   border: none;
 }
-.Treant .node.collapsed {
-  background-color: #ffa45c;
-  color:#52524b;;
+.Treant .node.collapsed{
+  background-color: #ffcdab;
+  color: #52524b;
+}
+
+.Treant .node.collapsed .circle{
+  background-color: #52524b;
+}
+
+.Treant .node.collapsed .circle:hover{
+  background-color: #ec9052;
 }
 
 .Treant .node.collapsed .collapse-switch {
   background: none;
 }
-.node{
-  padding:10px
+.node {
+  padding: 10px;
 }
 .timeline .node-desc {
   position: absolute;
@@ -146,59 +152,90 @@ body {
   top: 3px;
 }
 // Cores
-$pri: #FFCDAB;
-$sec: #5D5D5A;
-// Redireciona
-#retangulo{
-  transform:scale(0.7);
-  position: absolute;
+$pri: #ffcdab;
+$sec: #5d5d5a;
+.icon {
   display: flex;
-  max-width:182px;
-  top:10px;
+  justify-content: center;
+  align-items: center;
 
-  flex-direction:column;
-  #content{
-    width: 142px ;
-    height:auto ;
-    padding:12%;
-    text-align:center;
+  .circle {
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
     background: $pri;
-    color: $sec;
-    display:flex;
-    font-size:20px;
-    z-index:9999;
-  }
-  #seta{
-    z-index:999;
-    width:65.736px;
-    height:34.356px;
-    position:relative;
-    background: url(triangulo.svg) no-repeat;
-    left:50px;
-    top:-5px
-  } 
-}
-
-.noOver{
-  overflow:visible !important ;
-}
-
-@keyframes aparece
-{
-  from{
-    transform: scale(0);
-  }
-  to{
-    transform: scale(0.7);
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.51s ease-in-out;
   }
 }
 
-@keyframes desaparece
-{
-  from{
-    transform: scale(0.7);
-  }
-  to{
-    transform: scale(0.0);
+.circle:hover {
+  background: $sec;
+  transition: 0.51s ease-in-out;
+}
+
+// Modificando Modal-content
+.modal-content {
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+// Local Diferenciado
+#local {
+  color: #80807c;
+}
+
+//Arrumando os Segundos
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+$transicao: 0.5s cubic-bezier(.6,-0.28,.74,.05);
+// Botao Cancelar
+ #btnP{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .btnCancela{
+     border: 0;
+     padding: 10px;
+     width: 100px;
+     color: $pri;
+     background:$sec;
+     cursor: pointer;
+     transition: $transicao;
+
+    }
+
+    .btnCancela:hover{
+      color: $sec;
+      transition: $transicao;
+      background: $pri;
+      box-shadow: 1px 1px 1px 0.5px rgba(22, 22, 22, 0.459)
+    }
+  }
+
+
+// Display none no botao
+#redi{
+  display:none
+}
+
+// Local 
+#local{
+  cursor: pointer;
+}
+
+// Media Only screnn
+@import 'medias'
