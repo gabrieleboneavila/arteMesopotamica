@@ -21,3 +21,8 @@ $(".botaoEnviar").eq(0).click((event)=>{
   window.location = "artPage.php";
 })
 
+
+
+$(".botaoEnviar").eq(2).click((event)=>{
+  window.location = "ajudaPage.php";
+})

@@ -2,6 +2,7 @@
   var idObr
 
   $(botao).click((e)=>{
+    
     var botaoInfo = $(e.currentTarget),
         id = $(botaoInfo).attr("id")
         conf1===1 ?nome = $(botaoInfo).parent().find('div').text() :nome = $(botaoInfo).parent().find('.tituloCartaoRandom').text()
@@ -24,4 +25,11 @@
         document.cookie = "recOb = "+recOb
         // Redirecionar Para Página PuzzleGame
         window.location.href="puzzleGame.php"
+    })
+    
+    //Quando clica na imagem redirecionar para o botão 
+
+    $(".imgPuzzle").click((e)=>{
+      var $this = e.target
+      $($this).parent().find("button").trigger("click")
     })
