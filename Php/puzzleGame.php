@@ -437,7 +437,8 @@ $bread3 = $nome
   <script src="../JS/aparecerMenuSmartphone.js"></script>
 
 
-
+    <!-- Scripts JS -->
+    <?php include "../Includes/scripts.html" ?>
 </body>
 
 </html>

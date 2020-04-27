@@ -16,7 +16,7 @@
 	<div id="mae">
 		<div id="titulo">
 			<div id="divFilha">
-				<div id='zigurate'>
+				<div data-scroll id='zigurate'>
 					<div id="flechaIndicativa" class="flecha">
 						<i class="material-icons">
 							arrow_right_alt
@@ -32,8 +32,8 @@
 				</div>
 				</div>
 			</div>
-				<div id="divFilha1">Arte Mesopotâmica</div>
-				<div id="divFilha2">Aprenda Divertindo-se!</div>
+				<div data-scroll id="divFilha1">Arte Mesopotâmica</div>
+				<div data-scroll id="divFilha2">Aprenda Divertindo-se!</div>
 		
 		<div>
 			<?php include "../Includes/simboloMaior.html" ?>
@@ -43,7 +43,7 @@
 	</div>
 	<!----------------------Primeira div Principal------------------->
 
-	<div class="divPrincipal">
+	<div  class="divPrincipal">
 
 		<div class="tituloCartoes">
 			Arte
@@ -66,7 +66,7 @@
 				<div class="contentCard">
 					<div class="tituloCartao">Zigurates</div>
 					<div class="textoCartao">
-						São as construções mais famosas! Quer ver um? <a id="aparecerFlecha" href="#">Clica em mim!</a>
+						São as construções mais famosas! Quer ver um? <a  id="aparecerFlecha" href="#">Clica em mim!</a>
 					</div>
 				</div>
 			</div>
@@ -200,6 +200,8 @@
 	<!-- Script Contendo pequenas modificações na página, como o aparecimento das flechas -->
 	<script src="../JS/scriptHome.js"></script>
 
+	<!-- Scripts extras (como animação) -->
+	<?php include "../Includes/scripts.html" ?>
 </body>
 
 </html>
