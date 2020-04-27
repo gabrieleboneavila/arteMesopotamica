@@ -1,0 +1,2 @@
+[data-scroll]{-webkit-transition:all 2s;transition:all 2s}[data-scroll='in']{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}[data-scroll='out']{opacity:0;-webkit-transform:translateX(-200px);transform:translateX(-200px)}
+/*# sourceMappingURL=main.css.map */
