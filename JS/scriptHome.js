@@ -9,8 +9,13 @@ $("#aparecerFlecha").click(()=>{
 
 })
 $("#aparecerFlecha").click(()=>{
-$("html").animate({scrollTop:0},1000)
 
+$("html").animate({scrollTop:0},1000)
+$(".desaparece").attr("id",'null')
+setTimeout(()=>{
+  $(".desaparece").attr("id",'topActive')
+  $("#topActive").css({ display: "none" });
+},1000)
 })
 
 $(".botaoEnviar").eq(1).click((event)=>{
