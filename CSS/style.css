@@ -42,6 +42,24 @@ html >{
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+/* Top Icone */
+#topActive{
+  position:fixed;
+  top: 50%;
+  z-index: 9997;
+  justify-content: flex-end;
+  left:95.45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50px;
+  height: 50px;
+  background: #ff9c59;
+}
+#topActive img{
+  fill: white;
+  transform: rotate(180deg);
+}
 /* Arte Imagem */
 .arteImagem img{ 
   width: 500px;
@@ -935,6 +953,26 @@ body{
   align-items: center;
   display:none
 }
+@keyframes topAparece{
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes topDesaparece{
+  from{
+    transform: scale(1);
+    opacity: 1;
+  }
+  to{
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 @keyframes rotaciona{
 
   from{
@@ -1172,7 +1210,11 @@ body{
     width:222.9px;
     height: 148.9px;
   }
-  
+  #topActive{
+    width:  34px;
+    left:89vw;
+    height: 34px;
+  }
   iframe{
     width:232px !important;
     height: 130.8px !important;
