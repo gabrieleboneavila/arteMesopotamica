@@ -81,8 +81,10 @@
     var chart = new Treant(simple_chart_config, $, );
   </script>
 
-      <!-- Scripts JS -->
-      <?php include "../Includes/scripts.html" ?>
+  <!-- Smartphone -->
+  <script src='../JS/aparecerMenuSmartphone.js'></script>
+  <!-- Scripts JS -->
+  <?php include "../Includes/scripts.html" ?>
 </body>
 
 </html>
