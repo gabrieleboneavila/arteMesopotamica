@@ -1,0 +1,48 @@
+{
+  "name": "svg-pan-zoom-container",
+  "version": "0.2.7",
+  "description": "A vanilla-js module for adding zoom-on-wheel and pan-on-drag behavior to inline SVG elements.",
+  "license": "WTFPL",
+  "repository": "luncheon/svg-pan-zoom-container",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "jsdelivr": "iife/index.min.js",
+  "unpkg": "iife/index.min.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "cjs",
+    "iife",
+    "src"
+  ],
+  "keywords": [
+    "svg",
+    "pan",
+    "zoom",
+    "directive",
+    "vanilla",
+    "vanilla-js"
+  ],
+  "scripts": {
+    "clean": "rimraf docs/ es/ cjs/ iife/",
+    "build": "npm-run-all -s clean -p build:*",
+    "build:ts": "node build.js",
+    "build:demo-index": "pug demo/index.pug -o docs/ -O package.json",
+    "build:demo-local": "pug demo/local.pug -o docs/ -O package.json",
+    "watch": "npm-run-all -s clean -p watch:*",
+    "watch:ts": "sane \"npm run build:ts\" --glob=src/**/*.ts",
+    "watch:demo-index": "npm run build:demo-index -- -w",
+    "watch:demo-local": "npm run build:demo-local -- -w"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "gzip-size": "^5.1.1",
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.0.6",
+    "sane": "^4.1.0",
+    "typescript": "^3.8.3",
+    "uglify-js": "^3.8.0"
+  }
+}

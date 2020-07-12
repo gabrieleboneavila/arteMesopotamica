@@ -1,0 +1,39 @@
+{
+    "name": "vanilla-js-wheel-zoom",
+    "version": "5.0.9",
+    "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "babel-minify": "^0.5.1",
+        "prettier": "2.0.5",
+        "rollup": "^2.16.1",
+        "rollup-plugin-babel": "^4.4.0"
+    },
+    "scripts": {
+        "build": "yarn rollup && yarn prettier && yarn minify",
+        "watch": "yarn rollup --watch",
+        "rollup": "npx rollup --config",
+        "prettier": "npx prettier --write dist/wheel-zoom.js",
+        "minify": "npx minify dist/wheel-zoom.js --out-file dist/wheel-zoom.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/worka/vanilla-js-wheel-zoom.git"
+    },
+    "keywords": [
+        "wheelzoom",
+        "js",
+        "javascript",
+        "vanilla",
+        "mousewheel",
+        "image zoom",
+        "image scale",
+        "drag scrollable image"
+    ],
+    "author": "worka",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/worka/vanilla-js-wheel-zoom/issues"
+    },
+    "homepage": "https://github.com/worka/vanilla-js-wheel-zoom"
+}
