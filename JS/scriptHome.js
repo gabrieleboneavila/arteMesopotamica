@@ -29,5 +29,5 @@ $(".botaoEnviar").eq(0).click((event)=>{
 
 
 $(".botaoEnviar").eq(2).click((event)=>{
-  window.location = "ajudaPage.php";
+  window.location = "colorirPage.php";
 })

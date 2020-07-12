@@ -10,11 +10,11 @@ $("#menu").click(function(){
   $(response).css("display",'flex')
   $("#contentDiv").css({
     "animation-name":"animacaoEntrada",
-    "animation-duration":"2s"
+    "animation-duration":"1s"
   })
   $("#menu").css({
     "animation-name":"animacaoMenu",
-    "animation-duration":"1s"
+    "animation-duration":"0.25s"
   })
   setTimeout(() => {
      $("#menu").css({
@@ -33,18 +33,18 @@ $("#botaoSVG, #darkNav").click(()=>{
 function saida(){
   $("#contentDiv").css({
     "animation-name":"animacaoSaida",
-    "animation-duration":"2s",
+    "animation-duration":"1s",
     "animation-fill-mode":'forwards'
   })
 
   $("#botaoSVG").css({
     "animation-name":"animacaoX",
-    "animation-duration":"0.25s",
+    "animation-duration":"0.1s",
    })
    
    $("#menu").css({
     "animation-name":"animacaoMenuInvertida",
-    "animation-duration":"3s"
+    "animation-duration":"2s "
   })
   setTimeout(() => {
     $(response).css("display",'none')

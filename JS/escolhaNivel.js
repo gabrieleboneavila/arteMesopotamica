@@ -2,10 +2,9 @@
   var idObr
 
   $(botao).click((e)=>{
-    
     var botaoInfo = $(e.currentTarget),
         id = $(botaoInfo).attr("id")
-        conf1===1 ?nome = $(botaoInfo).parent().find('div').text() :nome = $(botaoInfo).parent().find('.tituloCartaoRandom').text()
+        conf1===1 ?nome = $(botaoInfo).parent().find('div').text():nome = $(botaoInfo).parent().find('.tituloCartaoRandom').text()
         
         nome = nome.trim()
 
