@@ -1,0 +1,12 @@
+#img{
+  width: 98.4vw !important;
+  height: 97vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+svg{
+  width: 1200px !important;
+  height: 900px !important;
+}

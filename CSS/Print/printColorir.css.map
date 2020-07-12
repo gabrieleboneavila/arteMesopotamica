@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,IADE,AACD,IAAI,AAAC,CACJ,KAAK,CAAE,KAAK,CAAG",
+    "sources": [
+        "printColorir.sass"
+    ],
+    "names": [],
+    "file": "printColorir.css"
+}
