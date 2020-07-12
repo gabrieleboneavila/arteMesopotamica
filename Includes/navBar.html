@@ -2,30 +2,54 @@
 
 <div id="responseDiv">
   <div id="darkNav"></div>
-
   <div id="contentDiv">
     <div id="botaoX">
       <img id="botaoSVG" src="../Icons/clear-24px.svg" />
     </div>
     <div id="contentNav">
-      <div><a href="artPage.php">Arte </a></div>
-      <div><a href="quizPage.php">Quiz </a></div>
-      <div><a href="ajudaPage.php">Ajuda</a></div>
+      <div>
+        <a href="artPage.php"
+          ><span class="iconNav"
+            ><img src="../Icons/sculpture-24px.svg" alt="" /></span
+          >Arte
+        </a>
+      </div>
+      <div>
+        <a href="quizPage.php"
+          ><span class="iconNav"
+            ><img src="../Icons/controller-classic-white.svg" alt="" /></span
+          >Quiz
+        </a>
+      </div>
+      <div>
+        <a href="colorirPage.php"
+          ><span class="iconNav"><img src="../Icons/brush.svg" alt="" /></span
+          >Colorir</a
+        >
+      </div>
+      <div class="hr"></div>
+      <div>
+        <a id='atualizar' href=""
+          ><span class="iconNav"><img src="../Icons/refresh-24px.svg" alt="" /></span
+          >Atualizar</a
+        >
+      </div>
     </div>
   </div>
 </div>
 <div id="navbar">
   <!-- Logo -->
-  <a href='index.php'><img src="../Icons/logo.svg" id="verium" /> </a
+  <a href="index.php"><img src="../Icons/logo.png" id="verium" /> </a
   ><!-- Novas Abas -->
   <div class="siteInfo">
     <div id="menu">
       <img src="../Icons/menu-24px.svg" />
     </div>
     <ul id="ulNav">
-      <li><a href="artPage.php">Arte </a></li>
-      <li><a href="quizPage.php">Quiz </a></li>
-      <li><a href="ajudaPage.php">Ajuda</a></li>
+      <!-- Caso adicione um novo pfvr add o id com o nome e dps add no navBarRisco.js (pasta é o js) -->
+      <li class="liNav" id="arte"><a href="artPage.php">Arte </a></li>
+      <li class="liNav" id="quiz"><a href="quizPage.php">Quiz </a></li>
+      <li class="liNav" id="colorir"><a href="colorirPage.php">Colorir</a></li>
     </ul>
     <!-- <a href="https://icons8.com/icon/8113/menu">Menu icon by Icons8</a> -->
     <!-- <img src="menu-24px.svg"> -->

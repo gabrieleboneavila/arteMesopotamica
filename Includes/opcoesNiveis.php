@@ -34,7 +34,7 @@
               $cont > $estrelas ? $class = "estrelaVazia" : $class = "estrelaCheia";
 
               echo "<span class='estrelaPeq $class'></span>";
-
+              if(!(isset($estrela))) $estrela = 0; 
               $estrela !== 0 ? $estrela-- : $estrela;
             }
             echo "

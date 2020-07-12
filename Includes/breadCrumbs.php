@@ -1,33 +1,22 @@
 <div class="mt-10 breadCrumbs">
-  <div id="bread1"><a href='index.php'>Home</a></div>
+  <a id="bread1" href='index.php'> Home </a>
   <?php
-  if (count($bread2) > 2) {
-    echo "<div class=\"bread2\">...</div>";
-    $cont1 = count($bread2);
+  if (!(isset($cont1))) {
+    $cont1 = 0;
   }
-  if (count($bread2) !== 0) {
+  if (isset($bread2)) {
 
     foreach ($bread2 as $value) {
       if (--$cont1 < 2) {
-        echo "<div class=\"bread2\"><a href=${value[1]}>${value[0]}</a></div>";
+        echo "<a class=\"bread2\" href=${value[1]}>${value[0]}</a>";
       }
     }
-  } ?>
+  }
+  ?>
 
   <div id="bread3">
-    <?php $qtdeLetra = str_split($bread3);
-    $cont = 0;
-    $palavra = "";
-    foreach ($qtdeLetra as $letra) {
-      if ($cont <= 6 || count($qtdeLetra) == 7) {
-        $palavra .= $letra;
-      } else {
-        $palavra .= "...";
-        break;
-      }
-      $cont++;
-    }
-    echo $palavra;
+    <?php echo $bread3
+
     ?>
   </div>
 </div>

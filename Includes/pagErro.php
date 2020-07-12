@@ -23,4 +23,4 @@
   }
 </style>
 <title>ERRO</title>
-<div id="div"> <div>Nível não encontrado :( </div><div> Por favor escolha outro nível, </div><a href=<?php echo $pag?>> Clicando aqui</a></div>
+<div id="div"> <div>Página não encontrada :( </div><div> Por favor escolha outra </div><a href=<?php echo $pag?>> Clicando aqui</a></div>

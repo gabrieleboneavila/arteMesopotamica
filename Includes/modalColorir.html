@@ -1,0 +1,95 @@
+<!-- Style -->
+<style>
+  .fundo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .inputs{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+  }
+  #espaco{
+    padding: 10px;
+  }
+</style>
+
+
+  <button type="button" id='btnHide' style='display: none' class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    ih
+  </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Mude o background</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fundo">
+          <div>
+            Escolha o tipo de fundo
+          </div>
+          <div class="inputs">
+            <input type="radio" name="bg" id="bgcN">&nbsp; <label for="bgcN">Normal</label>
+             <span id='espaco'> </span>
+            <input type="radio" name="bg" id="bgcG">&nbsp; <label for="bgcG">Gradiente</label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="salva" class="btn btn-secondary" data-dismiss="modal">Salvar e sair</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(()=>{
+  
+    ChangeColor()
+  })
+
+  $("[name='bg']").click(()=>{
+    ChangeColor()
+  })
+
+  function ChangeColor(){
+    $("#remove").remove()
+
+   var name = $("[name='bg']:checked")[0]
+
+   if($(name).attr("id")==="bgcG"){
+    var div = document.createElement("DIV")
+    $(div).attr("id", "remove")
+    $(div).html(" <div style='text-align:center'> </br> Agora, escolhas as cores </div> <div class='inputs' >Cor principal: &nbsp;<input type='color' name='cl' id='cl'/>  <span id='espaco'> </span>Cor Secundária: &nbsp;<input type='color' name='cl2' id='cl2'/></div>")
+    $(".fundo").append(div)
+   }
+
+   else if($(name).attr("id")==="bgcN"){
+    var div = document.createElement("DIV")
+    $(div).attr("id", "remove")
+    $(div).html(" <div style='text-align:center'> </br> Agora, escolha uma cor </div> <div class='inputs' >Cor:&nbsp; <input type='color' name='cl1' id='cl1'/>" )
+    $(".fundo").append(div)
+   }
+  }
+
+  $("#salva").click(()=>{
+    var name = $("[name='bg']:checked")[0]
+
+    if($(name).attr("id")==="bgcG"){
+      var inpt = $("[name='cl']").val(), inpt2 = $("[name='cl2']").val()
+      $("#img").css("background", "linear-gradient("+inpt+","+inpt2+")")
+      console.log(inpt + inpt2)
+    }else if($(name).attr("id")==="bgcN"){
+      var inpt1 = $("[name='cl1']").val()
+      $("#img").css("background", inpt1)
+    }
+  })
+</script>
