@@ -1,0 +1,37 @@
+{
+  "lb55": {
+    "id":"lb55",
+    "nome": "Leão da Babilônia",
+    "imagem": "../SVGs/leaoBabiloniaSVG.svg",
+    "img": "../SVGs/leaoBabiloniaBRANCO.svg",
+    "icone": "../Icons/zigurate-24px.svg"
+  },
+  "zu55": {
+    "id":"zu55",
+    "nome": "Zigurate de Ur",
+    "imagem": "../SVGs/zigurateUrPUZZLE.svg",
+    "img": "../SVGs/zigurateUrBRANCO.svg",
+    "icone": "../Icons/zigurate-24px.svg"
+  },
+  "pb55": {
+    "id":"pb55",
+    "nome": " Placa de Burney ",
+    "imagem": "../SVGs/placaBurneyPUZZLE.svg",
+    "img": "../SVGs/placaBurneyBRANCO.svg",
+    "icone": "../Icons/zigurate-24px.svg"
+  },
+  "eg55": {
+    "id":"eg55",
+    "nome": " Estátua de Gudea ",
+    "imagem": "../SVGs/gudeaSVG.svg",
+    "img": "../SVGs/gudeaBRANCO.svg",
+    "icone": "../Icons/zigurate-24px.svg"
+  },
+  "el56": {
+    "id":"el56",
+    "nome": "  Escultura de Lamassu ",
+    "imagem": "../SVGs/lamassuPUZZLE.svg",
+    "img": "../SVGs/lamassuBRANCO.svg",
+    "icone": "../Icons/zigurate-24px.svg"
+  }
+}
