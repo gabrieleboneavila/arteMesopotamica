@@ -223,6 +223,9 @@ $bread3 = $nome
   ?>
     <!-- Para mudar margin-top do título apenas nessa pag e puzzlePage-->
     <style>
+    body{
+      overflow-x: hidden;
+    }
     #titulo{
       margin-top: 2% !important;
     }

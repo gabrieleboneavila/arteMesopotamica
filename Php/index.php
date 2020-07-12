@@ -141,15 +141,15 @@
 	<!-- --------------------Terceira div Principal----------------- -->
 
 	<div id="divTerciaria">
-		<div class="tituloCartoes">Ajuda<div class="subtituloCartoes">Quem te aconselha em vez de te ajudar não é um bom amigo - G. Groce</div>
+		<div class="tituloCartoes">Colorir<div class="subtituloCartoes">Viva intensamente em mil cores porque a vida é um arco-íris que só você pode colorir. -  Em Mil cores </div>
 		</div>
 		<div class="cartoes">
 			<div id='ajuda1' class="cartao carC-lin1">
 
 				<div class="contentCard">
-					<div class="tituloCartao">Dúvida</div>
+					<div class="tituloCartao">Pinte</div>
 					<div class="textoCartao">
-						Você precisa de ajuda para entender o funcionamento do website?
+						Divirta-se pintando imagens meso-<br>potâmicas.
 					</div>
 				</div>
 			</div>
@@ -157,24 +157,24 @@
 			<div id='ajuda2' class="cartao carC-lin2">
 
 				<div class="contentCard">
-					<div class="tituloCartao">Manual</div>
+					<div class="tituloCartao">Recordação</div>
 					<div class="textoCartao">
-						Você anda perdido, não encontrando nenhuma informação?
-					</div>
+						Tenha uma recor-<br>dação da Mesopo-<br>tâmia!
+				</div>
 				</div>
 			</div>
 			<div id="ajuda3" class="cartao carC-lin3">
 
-				<div id='teste1' class="contentCard">
-					<div class="tituloCartao">Mapa</div>
+				<div  class="contentCard">
+					<div class="tituloCartao">Salve</div>
 					<div class="textoCartao">
-						Você deseja conhecer a localização de todas as páginas do site?
-					</div>
+					Quer guardar a tua magnífica pintura? Basta <br>salvá-la :) 
+				</div>
 				</div>
 			</div>
 		</div>
 			<button type="submit" class="botaoEnviar">
-				Obtenha Ajuda
+				Pintaaar!
 	</div>
 
 	<!-- Footer -->

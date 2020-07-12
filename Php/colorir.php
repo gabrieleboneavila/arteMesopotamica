@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" type="text/css" href="  https://printjs-4de6.kxcdn.com/print.min.css">
 
 <head>
   <style>
+    #print:hover {
+      border: 0 !important
+    }
+
     #color-input {
       position: absolute;
       opacity: 0;
@@ -43,9 +48,13 @@
     $bread3 = $_COOKIE["colorir"];
     include "../Includes/breadCrumbs.php" ?>
     <div class="title-grey-normal mt-5" id="nome">lll</div>
+    
+    <div class=" mt-3 alert alert-warning" role="alert">
+      Para melhor usabilidade recomendamos o uso de um dispositivo de maior resolução.
+    </div>
 
     <!-- Para escolher a cor que vai pintar -->
-    <div id="ferramentas" class="mt-5 mb-3">
+    <div id="ferramentas" class="mt-3 mb-3">
       <div id="cores">
         <div id="corEs">
           Escolha uma cor
@@ -58,16 +67,22 @@
 
 
     <!-- Onde da load no svg -->
-    <div class="svgImg" id="svgImg">
-      <div data-pan-on-drag data-zoom-on-wheel="max-scale: 1000;" id="img"></div>
-
+    
+    <div id="idt">
+      <div data-pan-on-drag data-zoom-on-wheel="max-scale: 1000;" style="
+        border: 1px solid #ccc;
+        box-shadow: 0 0 8px #aaa;
+        width: 1010px;
+        height: 600px;
+        background-color:white
+      " id="img"></div>
 
     </div>
 
+    <button id="print" class="botaoEnviar">Salvar PDF</button>
   </div>
 
 
-  
 
   <!-- Footer -->
   <?php include "../Includes/footerDark.html" ?>
@@ -80,62 +95,56 @@
   <?php include "../Includes/modalColorir.html" ?>
   <!-- Deixar nav Responsivel -->
   <script src="../JS/aparecerMenuSmartphone.js"></script>
-  <!-- Pan e -->
-
- 
-  <!-- Código -->
+  <!-- Pan e zoom -->
   <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom-container@0.2.7"></script>
-    <script>
-
-      new MutationObserver(function (mutations) {
-        if (window.inputting) {
-          delete window.inputting;
-        } else {
-          mutations.forEach(function (mutation) {
-            document.getElementById("scale").value = (
-              Math.round(
-                svgPanZoomContainer.getScale(mutation.target) * 10000
-              ) / 100
-            ).toFixed(2);
-          });
-        }
-      }).observe(document.getElementById("img"), {
-        attributes: true,
-        attributeFilter: ["data-scale"],
-      });
-    </script>
-    <!-- scroll observation-->
-    <script>
-      document
-        .getElementById("img")
-        .addEventListener("scroll", function () {
-          console.log({
-            scrollLeft: this.scrollLeft,
-            scrollTop: this.scrollTop,
-          });
-        });
-    </script>
-    <!-- scale observation-->
-    <script>
-      const observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-          console.log("scale:", mutation.target.dataset.scale);
-        });
-      });
-
-      observer.observe(document.getElementById("img"), {
-        attributes: true,
-        attributeFilter: ["data-scale"],
-      });
+  <!-- Imprimir e pdf -->
+  <script src="  https://printjs-4de6.kxcdn.com/print.min.js"></script>
 
 
-    </script>
+  <!-- Código -->
   <script>
+    // Para dar zoom e pan
+    new MutationObserver(function(mutations) {
+      if (window.inputting) {
+        delete window.inputting;
+      }
+    }).observe(document.getElementById("img"), {
+      attributes: true,
+      attributeFilter: ["data-scale"],
+    });
+  </script>
+  <!-- scroll observation-->
+  <script>
+    document
+      .getElementById("img")
+      .addEventListener("scroll", function() {
+        console.log({
+          scrollLeft: this.scrollLeft,
+          scrollTop: this.scrollTop,
+        });
+      });
+  </script>
+  <!-- scale observation-->
+  <script>
+    const observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        console.log("scale:", mutation.target.dataset.scale);
+      });
+    });
+
+    observer.observe(document.getElementById("img"), {
+      attributes: true,
+      attributeFilter: ["data-scale"],
+    });
+    // Acabou
+  </script>
+  <script>
+    // selecionar svg
     setTimeout(() => {
       var svg = document.querySelector("svg");
     })
 
-    var colorir = "leao";
+    // seleciona qual imagem o usuário selecionou nos cookies
     var posi = document.cookie.split(";")
     posi.forEach((e) => {
       var i = e.split('=')
@@ -144,7 +153,9 @@
         colorir = i[1]
       }
     })
-
+    // essa var se usa dps para colocar o nome do PDF
+    var noPdf
+    // faz a incrível mágica de selecionar a imagem que nosso lindo usuário queria: WOOOW sensacional
     $.ajax({
       method: "get",
       url: "../JSON/desenhos.json"
@@ -153,14 +164,15 @@
       if (info === undefined) {
         window.location = "colorirPage.php"
       }
-      console.log(info)
+      // coloca as info nas divs
+      noPdf = info.nome
       $("#nome").text(info.nome)
       $("#bread3").text(info.nome)
       $("title").text(info.nome + " - Colorir")
       $("#img").load(info.img);
 
+      // prepara quando o usuário clicar no em algum path (as partes da obras, ex.: a cauda do leão)
       setTimeout(() => {
-
         $("path").click((e) => {
           var $this = e.target,
             cor = $("#color-input").val()
@@ -168,13 +180,12 @@
             "fill": cor,
             "stroke": cor
           })
-          $($this).css("zoom", "10%")
         })
       }, 500)
     })
 
 
-    // Input Color diferente
+    // Input Color diferenciado (escolha uma cor)
     $('#color-input').on('change', function() {
       $(this)
         .next('#pseudo-color-input')
@@ -190,17 +201,53 @@
       })
     })
 
-    // Quando clica no bgc(background color)
-
+    // Quando clica no bgc(background color) 
     $("#bgc").click(() => {
       $("#btnHide").trigger("click")
     })
     $(() => {
       $("path").click((e) => {
         var img = e.target
-
       })
     })
+  </script>
+
+  <script>
+    $("#print").click(() => {
+
+
+      var contents = $("#idt").html();
+      var frame1 = $('<iframe />');
+      frame1[0].name = "frame1";
+      frame1.css({
+        "position": "absolute",
+        "top": "-1000000px"
+      });
+      $("body").append(frame1);
+      var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+      frameDoc.document.open();
+      //Create a new HTML document.
+      frameDoc.document.write('<html><head><title>DIV Contents</title>');
+      frameDoc.document.write('</head><body>');
+      //Append the external CSS file.
+      frameDoc.document.write('<link href="../CSS/Print/printColorir.css" rel="stylesheet" type="text/css" />');
+      //Append the DIV contents.
+      frameDoc.document.write(contents);
+      frameDoc.document.write('</body></html>');
+      frameDoc.document.close();
+      setTimeout(function() {
+        window.frames["frame1"].focus();
+        window.frames["frame1"].print();
+        frame1.remove();
+      }, 500);
+    })
+  </script>
+
+  <!-- tirar alert dps de 10s -->
+  <script>
+    setTimeout(()=>{
+      $(".alert").css("display", "none")
+    },10000)
   </script>
 </body>
 

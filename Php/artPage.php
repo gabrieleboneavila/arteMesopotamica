@@ -94,6 +94,8 @@ foreach ($data as $informacao) {
       // Envia para outra janela
       window.location = "artContent.php";
     })
+
+    
   </script>
 </body>
 

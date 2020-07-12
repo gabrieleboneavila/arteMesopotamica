@@ -1,4 +1,4 @@
-<?php $data = file_get_contents("../JSON/quiz.json"); 
+<?php $data = file_get_contents("../JSON/desenhos.json"); 
       $data = json_decode($data,true);
       $Puzzles = [];
       $id = 100;
@@ -9,8 +9,7 @@
     $id--;
    }
   //  Bread
-   $bread2 = [["Quiz","quizPage.php"]];
-   $bread3="Puzzles"
+   $bread3="Colorir"
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +23,7 @@
   </style>
   <!-- LINKS CSS  -->
   <?php include "../Includes/linksCSSinicio.html"?>
-  <title>Puzzle</title>
+  <title>Colorir</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -32,14 +31,14 @@
 
     <div id="mae">
       <?php include "../Includes/breadCrumbs.php" ?>
-      <div id="puzzleSVG">
-        <?php include "../Includes/puzzle.html" ?>
+      <div id="ursoSvg" class="mt-5">
+        <?php include "../Icons/ursinho.svg" ?>
       </div>
       <div id="divFilha1">
-        Puzzles
+      Colorir
       </div>
       <div id="divFilha2">
-        Escolha uma obra e divirta-se
+        Escolha uma obra e a pinte 
       </div>
       <div>
         <?php include "../Includes/simboloMaior.html" ?>
@@ -60,7 +59,7 @@
                   </div>        
                   <div style='background-image:url(${informacao['imagem']})' class='imgPuzzle mt-5'>
                   </div>
-                <button data-id=\"${informacao['id']}\" id=\"${informacao['id']}\" class='btnPuzzle botaoEnviar' >Jogar!</button>
+                <button data-id=\"${informacao['id']}\" id=\"${informacao['id']}\" class='btnPuzzle botaoEnviar' >Pintar!</button>
                 </div>  
           ";
           $cont++;
@@ -70,7 +69,6 @@
     <?php include "../Includes/footer.html";
         // Scripts
           include "../Includes/scripts.html";
-          include "../Includes/opcoesNiveis.php"
 
     ?>
     
@@ -79,11 +77,22 @@
   <script src="../JS/aparecerMenuSmartphone.js"></script>
         
 <script>
-// isso vai pro escholaNivel.js
-var recOb = 0, botao = ".botaoEnviar", conf1 = 1;
+$(()=>{
+$(".imgPuzzle").click((e)=>{
+  var $this = e.target
+  $($this).parent().find("button").trigger('click')
+})
+
+$(".botaoEnviar").click((e)=>{
+  var $this = e.target
+  document.cookie= "colorirId="+$($this).attr("id")
+  window.location = "colorir.php"
+})
+
+
+})
 </script>
 
-<script src='../JS/escolhaNivel.js'></script>
 </body>
 </html>
 
